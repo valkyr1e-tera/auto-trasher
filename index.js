@@ -1,7 +1,7 @@
 'use strict'
 
 module.exports = function AutoTrasher(mod) {
-  let items = null
+  let items = []
   
   mod.command.add('trash', () => {
 		mod.settings.enabled = !mod.settings.enabled
@@ -9,7 +9,7 @@ module.exports = function AutoTrasher(mod) {
   })
   
   mod.hook('S_INVEN', 14, event => {
-    items = event.first ? event.items : inven.concat(event.items)
+    items = event.first ? event.items : items.concat(event.items)
 
     if (!mod.settings.enabled || event.more)
       return
