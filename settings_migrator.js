@@ -16,12 +16,12 @@ module.exports = function MigrateSettings(from_ver, to_ver, settings) {
         // No config file exists, use default settings
         return DefaultSettings;
     } else {
-        if(from + 1 < to) {
+        if(from_ver + 1 < to_ver) {
             settings = MigrateSettings(from_ver, from_ver + 1, settings);
             return MigrateSettings(from_ver + 1, to_ver, settings);
         }
 
-        switch (to) {
+        switch (to_ver) {
             default:
                 settings = Object.assign(DefaultSettings, settings);
                 break;

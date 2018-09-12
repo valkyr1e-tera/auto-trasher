@@ -2,7 +2,7 @@
 	"files": {
 		"index.js": "7defb604b728a15b04029a335e1e4501c67b604870f37bb740d5867b1dd5167d",
 		"module.json": "2da7b5b0faae680430dedeb6c66f749f232f888e332c905e665fdf4e8c37533b",
-		"settings_migrator.js": "739ba91a219a906c7e2465d0dfc3b720c60114e4167b7ec32e5b87a6cdb7733e"
+		"settings_migrator.js": "849048b39d0d61ac088c72244f27c9d9f48dd47197de8e8109674cca44ff5f65"
 	},
 	"defs": {
 		"C_DEL_ITEM": 2,
