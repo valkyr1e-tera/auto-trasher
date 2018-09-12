@@ -2,7 +2,7 @@
 
 module.exports = function AutoTrasher(mod) {
   let items = null
-  
+
   mod.command.add('trash', () => {
 		mod.settings.enabled = !mod.settings.enabled
 		mod.command.message((mod.settings.enabled ? 'en' : 'dis') + 'abled')
