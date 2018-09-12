@@ -1,20 +1,20 @@
 'use strict'
 
 module.exports = function AutoTrasher(mod) {
-  let items = []
+  let items = null
   
   mod.command.add('trash', () => {
 		mod.settings.enabled = !mod.settings.enabled
 		mod.command.message((mod.settings.enabled ? 'en' : 'dis') + 'abled')
   })
-  
+
   mod.hook('S_INVEN', 14, event => {
     items = event.first ? event.items : items.concat(event.items)
 
     if (!mod.settings.enabled || event.more)
       return
 
-    for (let item in items) {
+    for (let item of items) {
       if (item.slot < 40)
         continue
 
@@ -25,5 +25,7 @@ module.exports = function AutoTrasher(mod) {
           amount: item.amount
         })
     }
+
+    items = null
   })
 }
