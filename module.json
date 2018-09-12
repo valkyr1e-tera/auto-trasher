@@ -1,0 +1,10 @@
+{
+  "disableAutoUpdate": false,
+  "servers": ["https://raw.githubusercontent.com/valkyr1e-tera/auto-trasher/master/"],
+  "options": {
+    "niceName": "auto-trasher",
+    "settingsVersion": 1,
+    "settingsFile": "config.json",
+    "settingsMigrator": "settings_migrator.js"
+  }
+}
