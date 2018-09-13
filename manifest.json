@@ -1,11 +1,11 @@
 {
 	"files": {
-		"index.js": "7defb604b728a15b04029a335e1e4501c67b604870f37bb740d5867b1dd5167d",
+		"index.js": "581ec1bdd02fd58384ad1eef00c37845b1e9d450b1a29083af75c29f88157f8a",
 		"module.json": "2da7b5b0faae680430dedeb6c66f749f232f888e332c905e665fdf4e8c37533b",
 		"settings_migrator.js": "fc88dfb839b18c1417dc323f560c5a68712ef990cb136929ffc3230d4fce9768"
 	},
 	"defs": {
 		"C_DEL_ITEM": 2,
-		"S_INVEN": 14
+		"S_INVEN": 16
 	}
 }

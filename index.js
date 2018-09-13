@@ -8,7 +8,7 @@ module.exports = function AutoTrasher(mod) {
 		mod.command.message((mod.settings.enabled ? 'en' : 'dis') + 'abled')
   })
 
-  mod.hook('S_INVEN', 14, event => {
+  mod.hook('S_INVEN', 16, event => {
     items = event.first ? event.items : items.concat(event.items)
 
     if (!mod.settings.enabled || event.more)
